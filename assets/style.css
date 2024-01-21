@@ -1,0 +1,520 @@
+:root {
+    ---black-color: #000;
+    ---hover-color: #ffe600;
+    ---global-color: #F4F4F4;
+    ---grey-color: #b4b2b2;
+    ---telegram-color: #0088cc;
+    ---vk-color: #07f;
+    ---instagram-color: #bc1888;
+    ---kwork-color: #ffa600;
+    
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+#section1 {
+    margin-bottom: 350px;
+}
+
+.container {
+    max-width: 1140px;
+    width: 85%;
+    margin: 0 auto;}
+nav {
+    margin-top: 30px; 
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+/********* LOGO **********/
+.logo a{
+    align-items: center;
+    text-align: center;
+    display: flex;
+
+}
+
+.logo p {
+    padding-left: 5px;
+    color: #F4F4F4;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 18px; /* 100% */
+    text-transform: uppercase;
+}
+/*********** NAV-LIST **********/
+.my-list ul{
+display: flex;
+gap: 25px;
+}
+.menu_link  {
+    color: #F4F4F4;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 15px; 
+}
+.menu_link {
+    position: relative;
+}
+.menu_link:before {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color:  #ffe600;
+    right: 0;
+    bottom: -5px;
+    position: absolute;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+.menu_link:hover:before {
+    left: 0;
+    width: 100%;
+}
+.menu_link:hover {
+    color: #ffe600;
+}
+
+/********** Fixed-Header *********/
+.header__fixed {
+height: 80px;
+width: 100%;
+position: sticky;
+z-index: 2;
+top: 0;
+left: 0;
+background-color: #000000;
+animation-name: header;
+animation-duration: .3s;
+}
+@keyframes header {
+    0% {
+        top: -100px;
+         opacity: 0;       
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+
+
+
+
+/*********  NAV-BTN **********/
+.nav-btn button {
+    padding: 8px 16px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 600;
+    color: grey;
+    border: 1px solid grey;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+    background-color: transparent;
+}
+.nav-btn button:hover {
+    cursor: pointer;
+    color: var(---black-color);
+    background: var(---hover-color);
+    border: 1px solid var(---hover-color);
+    -webkit-box-shadow: 0 0 5px var(---hover-color), 0 0 20px var(---hover-color), 0 0 50px var(---hover-color), 0 0 100px var(---hover-color);
+    box-shadow: 0 0 5px var(---hover-color), 0 0 20px var(---hover-color), 0 0 50px var(---hover-color), 0 0 100px var(---hover-color);
+}
+
+/*********  MAIN-2 **********/
+.main-2 {
+    display: flex;
+    gap: 125px;
+    margin-top: 100px;
+    align-items: center;
+}
+.about-me {
+    width: 800px;
+}
+.gif-img img{
+    width: 600px;
+    height: 600px;
+}
+.web-me{
+    width: 18ch;
+    overflow: hidden;
+    border-right: 4px solid orange;
+    margin-bottom: 35px;
+    color: #F4F4F4;
+    font-family: monospace;
+    white-space: nowrap;
+    font-size: 52.5px;
+    font-weight: 600;
+    line-height: 68.25px;
+    animation: MyCursor  0.75s step-end infinite, words 5s steps(18);
+}
+.mydream {
+    margin-bottom: 55px;
+    color: #B4B2B2;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px; 
+}
+.main2-btn {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    
+}
+.call-me {
+    border-radius: 100px;
+    border: 1px solid #FFE600;
+    background: #FFE600;
+    padding: 17px 40.611px 17.5px 41px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16.5px;
+    font-weight: 500;
+    line-height: 16.5px;
+    cursor: pointer;
+    transition:all 0.4s  ;
+    -webkit-transition:all 0.4s  ;
+    -moz-transition:all 0.4s  ;
+    -ms-transition:all 0.4s  ;
+    -o-transition:all 0.4s  ;
+}
+.call-me:hover {
+    background: #c0b65d;
+}
+.submit-app {
+    background-color: transparent;
+    padding: 16.75px 25.802px 16.75px 17.21px;
+    border-radius: 100px;
+    border: 1px solid #B4B2B2;
+    color: #F4F4F4;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    cursor: pointer;
+}
+.submit-app:hover {
+    border: 1px solid  #FFE600;
+    color:  #FFE600;
+}
+
+@keyframes MyCursor {
+    0% {
+        border-color: orange ;
+    }
+    50% {
+        border-color: transparent
+    }
+    100% {
+        border-color: orange;
+    }
+}
+@keyframes words {
+    from {
+        width: 0%;
+    }
+
+}
+
+
+/********* SECTION - 2 *********/
+#section2 {
+    margin-bottom: 120px;
+}
+.section2_about_me {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 133px;
+}
+
+.my-photo img {
+    position: relative;
+    cursor: pointer;
+    opacity: 0.8;
+    width: 450px;
+    height: 700px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+.my-photo .name {
+    position: absolute;
+    display: none;
+}
+.my-photo img:hover {
+    box-shadow: 0 0 5px 5px#FFE600 ;
+    opacity: 0.5;
+    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    -moz-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    -o-transform: scale(1.01);
+}
+.my-photo:hover {
+    .name {
+        color: rgb(224, 216, 216);
+        font-family: Montserrat;
+        top: 193vh;
+        left: 48vh;
+        font-size: 30px;
+        position: absolute;
+        display: block;
+
+}
+}
+.info-1 h1,.info-2 h1,.info-3 h1{
+    margin-bottom: 18px;
+    margin-top: 17px;
+    color: #FFE600;
+    font-family: Montserrat;
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 35.1px; 
+    letter-spacing: 1.3px;
+}
+.info-1, .info-2, .info-3 p {
+    color: #B4B2B2;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.5px;
+}
+/********* SECTION 3 *********/
+
+.skill-tag {
+    margin-bottom: 30px;
+    color: #F4F4F4;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 35.1px;
+    letter-spacing: 1.3px;
+}
+.my-skills {
+    animation: skillBox 3s linear infinite;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0fr;
+
+}
+.my-skills .img1, .img2,.img3,.img4,.img5,.img6 {
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgba(36, 35, 35, 0.671);
+    padding: 25.13px 45.5px 25.12px 45.5px;
+}
+.my-skills .img4 img {
+    height: 244px;
+}
+.my-skills .img5 img {
+    height: 244px;
+}
+.my-skills .img6 img {
+    height: 244px;
+}
+.my-skills p {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #F4F4F4;
+    font-family: Montserrat;
+    font-size: 19.5px;
+    font-weight: 600;
+    line-height: 19.5px;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+.my-skills .img1:hover img {
+    filter: drop-shadow(3px 3px 10px green);
+    -webkit-filter: drop-shadow(3px 3px 15px green);
+}
+.my-skills .img2:hover img {
+    filter: drop-shadow(3px 3px 10px blue);
+    -webkit-filter: drop-shadow(3px 3px 15px blue);
+}
+.my-skills .img3:hover img {
+    filter: drop-shadow(3px 3px 10px yellow);
+    -webkit-filter: drop-shadow(3px 3px 10px yellow);
+}
+.my-skills .img4:hover img {
+    filter: drop-shadow(3px 3px 10px pink);
+    -webkit-filter: drop-shadow(3px 3px 10px pink);
+}
+.my-skills .img5:hover img {
+    filter: drop-shadow(3px 3px 10px blue);
+    -webkit-filter: drop-shadow(3px 3px 10px blue);
+}
+.my-skills .img6:hover img {
+    filter: drop-shadow(3px 3px 10px orange);
+    -webkit-filter: drop-shadow(3px 3px 10px orange);
+}
+
+@keyframes skillBox {
+    0% {
+      -webkit-transform: rotate(0deg) translateX(10px) rotate(0deg);
+              transform: rotate(0deg) translateX(10px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg) translateX(10px) rotate(-360deg);
+        transform: rotate(360deg) translateX(10px) rotate(-360deg);
+    }
+
+}
+
+
+/********* FOOTER *********/
+footer {
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.footer-div {
+    display: flex;
+    gap: 110px;
+}
+.contacts h1 {
+    color: #F4F4F4;
+    font-family: Montserrat;
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 35.1px;
+    letter-spacing: 1.3px;
+}
+.social-div {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+.telegram-div, .mail-div {
+    border-radius: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px ;
+    background-color: #fff;
+}
+.mail-div img {
+    margin-top: 12px;
+    height: 30px;
+    width: 40px;
+}
+.telegram-div img {
+    margin-top: 10px;
+    height: 35px;
+    width: 40px;
+}
+.telegram-div:hover {
+    background-color: #ffe600;
+}
+.mail-div:hover {
+    background-color: #ffe600;
+}
+
+.footer-navigation  h2 {
+    color: #FFE600;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 16.5px;
+}
+.footer-social h2 {
+    color: #FFE600;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 16.5px;
+}
+.footer-resource h2 {
+    color: #FFE600;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 16.5px;
+
+}
+.footer-nav-a {
+    color: #F4F4F4;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 15px; 
+}
+.footer-text {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 150px;
+
+}
+.footer-text h2 + * {
+    padding-top: 20px;
+}
+.footer-text li {
+    padding-top: 15px;
+}
+
+
+.footer-text a  {
+    position: relative;
+}
+.footer-text a:before {
+    content: "";
+    width: 0%;
+    height: 1px;
+    background-color:  #ffe600;
+    right: 0;
+    bottom: -5px;
+    position: absolute;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+.footer-text a:hover:before {
+    left: 0;
+    width: 100%;
+}
+.footer-text a:hover {
+    color: #ffe600;
+}
+/********* Section 5  *********/
+.div-conf {
+    display: flex;
+    align-items: center;
+    justify-content: end ;
+}
+.div-conf p {
+    color: #B4B2B2;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 15px;
+}
