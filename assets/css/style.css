@@ -48,6 +48,9 @@ nav {
     text-transform: uppercase;
 }
 /*********** NAV-LIST **********/
+.my-list {
+    align-items: center;
+}
 .my-list ul{
 display: flex;
 gap: 25px;
@@ -55,7 +58,7 @@ gap: 25px;
 .menu_link  {
     color: #F4F4F4;
     font-family: Montserrat;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 15px; 
 }
