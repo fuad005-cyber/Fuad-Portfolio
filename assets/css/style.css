@@ -9,7 +9,11 @@
     ---kwork-color: #ffa600;
     
 }
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     overflow-x: hidden;
     background-color: #000;
@@ -384,7 +388,9 @@ animation-duration: .3s;
     filter: drop-shadow(3px 3px 10px orange);
     -webkit-filter: drop-shadow(3px 3px 10px orange);
 }
-
+.img4 {
+    padding: 37px 37px 37px 37px;
+}
 @keyframes skillBox {
     0% {
       -webkit-transform: rotate(0deg) translateX(10px) rotate(0deg);
